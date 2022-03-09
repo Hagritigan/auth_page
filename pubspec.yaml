@@ -29,6 +29,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  sliding_switch: 1.0.0
+  syncfusion_flutter_sliders: 19.4.55
+
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -56,6 +59,12 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  assets:
+    - assets/dart-logo.png
+    - assets/user.png
+    - assets/pizza.png
+    - assets/cheese.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

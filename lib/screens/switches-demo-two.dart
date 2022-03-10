@@ -1,3 +1,4 @@
+import 'package:auth_page/utils/global_theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:sliding_switch/sliding_switch.dart';
@@ -42,6 +43,7 @@ class _SwitchesDemoTwoState extends State<SwitchesDemoTwo> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        theme: globalTheme(),
         home: Scaffold(
           body: SingleChildScrollView(
             child: Column(

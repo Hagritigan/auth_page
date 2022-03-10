@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:auth_page/switches-demo-screen.dart';
+import 'package:auth_page/screens/switches-demo-screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,14 +12,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: SingleChildScrollView(
-          child: Column(children: [
-            const Padding(
+          child: Column(children: const [
+            Padding(
                 padding: EdgeInsets.only(top: 60.0),
                   child: Align(alignment: Alignment(1, 0),
                     child: SizedBox(width: 232, height: 123,
                       child: Image(image: AssetImage('assets/pizza.png')),),
                   )),
-            const Padding(
+            Padding(
                 padding: EdgeInsets.fromLTRB(0.0, 33.0, 0.0, 0.0),
                 child: Text('Калькулятор пиццы',
                   textAlign: TextAlign.center,
@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
                     fontSize: 30,
                     fontWeight: FontWeight.bold,
                   ),)),
-            const Padding(
+            Padding(
                 padding: EdgeInsets.fromLTRB(0.0, 9.0, 0.0, 0.0),
                 child: Text('Выберите параметры:',
                   textAlign: TextAlign.center,
